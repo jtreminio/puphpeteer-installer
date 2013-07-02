@@ -49,7 +49,7 @@ class Installer
             $to = $projectDir . '/' . $modulePath;
 
             // @TODO is there a better way without installing any other vendor lib?
-            shell_exec("mkdir -p {$to} && cp --parents -r {$from} {$to}");
+            shell_exec("mkdir -p {$to} && cp -r {$from} {$to}");
         }
     }
 }
